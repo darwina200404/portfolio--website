@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darwin A - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Darwin A</h1>
+        <p>Electronics & Communication Engineering Student | Software Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills-projects">Skills & Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resume/A_Darwin_Resume.pdf" download>Download Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <img src="my_photo.jpeg" alt="Profile Photo" class="profile-photo">
+            <p>
+                I am a B.E student specializing in Electronics & Communication Engineering, with a keen interest in software development and AI. I am passionate about applying my technical skills to solve real-world problems and am committed to continuous learning.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>B.E in Electronics & Communication Engineering</strong><br>
+                Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (2021-2025)<br>
+                CGPA: 8.18
+            </li>
+            <li>
+                <strong>Higher Secondary Education</strong><br>
+                Jai Gopal Garodia Matriculation Higher Secondary School (2020-2021)<br>
+                Percentage: 86.1%
+            </li>
+            <li>
+                <strong>Secondary Education</strong><br>
+                Everwin Matriculation Higher Secondary School (2018-2019)<br>
+                Percentage: 83.6%
+            </li>
+        </ul>
+    </section>
+
+    <!-- Start of the horizontal container for Skills and Projects -->
+    <section id="skills-projects" class="flex-container">
+        <div class="skills-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: Java, Python</li>
+                <li>Database: MySQL</li>
+                <li>Tools: Git & GitHub, Google Colab, Eclipse, MATLAB</li>
+            </ul>
+        </div>
+
+        <div class="projects-section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Diabetic Retinopathy Detection System</strong><br>
+                    Developed a CNN model to classify retinal images into disease severity categories using Python and Google Colab.
+                </li>
+                <li>
+                    <strong>Voice-Controlled Home Automation</strong><br>
+                    Created a cost-effective system to control devices via voice commands using Arduino, Bluetooth, and Google Assistant.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End of the horizontal container -->
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:darwin14204@gmail.com">darwin14204@gmail.com</a></p>
+        <p>Phone: 9043510438</p>
+        <p>
+            <a href="https://www.linkedin.com/in/darwin-a-19794a236/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/darwina200404" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Darwin A</p>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
